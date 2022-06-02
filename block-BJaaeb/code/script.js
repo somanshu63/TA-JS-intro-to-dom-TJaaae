@@ -58,7 +58,7 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 */
 
 // Your code goes here
-let createToDoList = (array) => {
+let createTodoList = (array) => {
   let ul = document.createElement("ul");
   for(let i = 0; i < array.length; i++){
     ul.append(document.createElement("li"));
@@ -66,15 +66,10 @@ let createToDoList = (array) => {
     ul.children[i].children[0].innerText = array[i].name;
     ul.children[i].append(document.createElement("input"));
     ul.children[i].children[1].type = "checkbox";
-    ul.children[i].children[1].checked= "";
     ul.children[i].children[1].name = "";
     ul.children[i].children[1].id = "";
     ul.children[i].append(document.createElement("span"));
-    if(array[i].isDone == false){
-      ul.children[i].children[2].innerText = "X";
-    } else {
-      ul.children[i].children[2].innerText = "Y";
-    }
+    ul.children[i].children[2].innerText = "X";
   }
   return ul;
 }
