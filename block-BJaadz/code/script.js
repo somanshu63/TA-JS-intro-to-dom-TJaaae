@@ -39,7 +39,7 @@ let hrImgArray = Array.from(hrImg);
 hrImgArray.forEach((elm) => elm.style.border = "2px solid purple");
 
 // Hide the box number 17 (last box).
-let box17 = document.querySelector(".seven");
+let box17 = document.querySelector(".seventeen");
 box17.style.display = "none";
 
 // Change the border of all the hr element from solid to dashed type
@@ -53,14 +53,11 @@ para.innerText = "querySelector returns an element you can maupulate but querySe
 
 // Remove all the elements from box 1
 let box1 = document.querySelector(".one");
-let rm = box1.querySelector("hr");
-rm.remove();
-rm = box1.querySelector("hr");
-rm.remove();
+box1.innerHTML = "";
 
 // Replace all the elements inside box 1 with the para (you created above)
 box1.append(para);
-box1.append(para);
+
 
 /* Walking the DOM
 Do the following after selecting box 16 and storing in variable named box16
@@ -166,19 +163,14 @@ box9.append(btn);
 
 // Create a img element with src value `https://images.unsplash.com/photo-1592500595497-d1f52a40b207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80` and store in a variable named imgElm
 let imgElm = document.createElement("img");
-imgElm.style.src = `https://images.unsplash.com/photo-1592500595497-d1f52a40b207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80`;
+imgElm.style.src = "https://images.unsplash.com/photo-1592500595497-d1f52a40b207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80";
 
 // Select the box 7 using class seven
 document.querySelector(".seven");
 
 // Remove all the elements form box seven
 let box7 = document.querySelector(".seven");
-rm = box7.querySelector("hr");
-rm.remove();
-rm = box7.querySelector("hr");
-rm.remove();
-rm = box7.querySelector("hr");
-rm.remove();
+box7.innerHTML = "";
 
 // Append the imgElm to the box no 7
 box7.append(imgElm);
