@@ -95,6 +95,7 @@ h1{
     margin: 1rem 0;
 }
 .btn{
+    border: none;
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: #377E80;
@@ -111,7 +112,7 @@ h2{
     text-transform: capitalize;
 
 }
-author{
+p{
     margin: 1rem 0;
     font-size: 1rem;
     display: inline-block;
